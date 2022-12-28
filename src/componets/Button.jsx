@@ -7,7 +7,7 @@ function Button(props){
     classes += props.triple ? 'triple' : ''
     return(
         <button 
-            onClick={e => props.click && props.click(e.target.label)}
+            onClick={e => props.click && props.click(e.target.innerHTML)}
             className={classes}>
             {props.label}
         </button> 
